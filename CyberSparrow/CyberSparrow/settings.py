@@ -135,7 +135,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'build/static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -147,7 +146,11 @@ REST_FRAMEWORK = {
 }
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-
 SUMMERNOTE_THEME = 'bs4'
-
 CORS_ORIGIN_ALLOW_ALL = True
+
+
+# Django-Resized Configuration:
+DJANGORESIZED_DEFAULT_SIZE = [640, 360]
+DJANGORESIZED_DEFAULT_QUALITY = 75
+DJANGORESIZED_DEFAULT_FORCE_FORMAT = 'WEBP'

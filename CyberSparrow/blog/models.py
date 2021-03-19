@@ -8,12 +8,10 @@ class Categories(models.TextChoices):
     WORLD = 'world'
     MODELLING = 'modelling'
     SCIENCE = 'science'
-    DESIGN = 'design'
     TRAVEL = 'travel'
-    CULTURE = 'culture'
-    OPINION = 'opinion'
+    HISTORY = 'history'
     TECHNOLOGY = 'technology'
-    HEALTH = 'health'
+    PYTHON = 'python'
 
 
 class BlogPost(models.Model):

@@ -21,6 +21,7 @@ class BlogPost(models.Model):
     thumbnail = ResizedImageField(upload_to='photos/%Y/%m/%d/')
     thumbnail_description = models.CharField(max_length=50, default='thumbnail description')
     excerpt = models.CharField(max_length=150)
+    year = models.CharField(max_length=4)
     month = models.CharField(max_length=3)
     day = models.CharField(max_length=2)
     content = models.TextField()

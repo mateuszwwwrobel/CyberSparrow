@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-test-env.eba-bng7szku.eu-west-2.elasticbeanstalk.com', 'www.matthewwrobel.uk', 'matthewwrobel.uk']
 
 
 # Application definition

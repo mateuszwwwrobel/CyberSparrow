@@ -1,0 +1,1 @@
+web: gunicorn CyberSparrow.wsgi --log-file -

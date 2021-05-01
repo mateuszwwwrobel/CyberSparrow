@@ -130,7 +130,7 @@
                             return u.a.wrap((function (e) {
                                 for (; ;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, f.a.get("".concat("http://localhost:8000", "/api/blog/featured/"));
+                                        return e.prev = 0, e.next = 3, f.a.get("".concat("https://mateuszwrobel.herokuapp.com", "/api/blog/featured/"));
                                     case 3:
                                         t = e.sent, d(t.data[0]), e.next = 9;
                                         break;
@@ -153,7 +153,7 @@
                             return u.a.wrap((function (e) {
                                 for (; ;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, f.a.get("".concat("http://localhost:8000", "/api/blog/"));
+                                        return e.prev = 0, e.next = 3, f.a.get("".concat("https://mateuszwrobel.herokuapp.com", "/api/blog/"));
                                     case 3:
                                         t = e.sent, s(t.data), e.next = 9;
                                         break;
@@ -249,7 +249,7 @@
                             return u.a.wrap((function (e) {
                                 for (; ;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, f.a.get("".concat("http://localhost:8000", "/api/blog/").concat(t));
+                                        return e.prev = 0, e.next = 3, f.a.get("".concat("https://mateuszwrobel.herokuapp.com", "/api/blog/").concat(t));
                                     case 3:
                                         a = e.sent, n(a.data), e.next = 9;
                                         break;
@@ -296,7 +296,7 @@
                             return u.a.wrap((function (e) {
                                 for (; ;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, f.a.post("".concat("http://localhost:8000", "/api/blog/category/"), {category: t}, a);
+                                        return e.prev = 0, e.next = 3, f.a.post("".concat("https://mateuszwrobel.herokuapp.com", "/api/blog/category/"), {category: t}, a);
                                     case 3:
                                         c = e.sent, n(c.data), e.next = 9;
                                         break;

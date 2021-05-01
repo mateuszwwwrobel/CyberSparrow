@@ -17,7 +17,7 @@
                             to: "/",
                             children: Object(b.jsx)("img", {
                                 className: "img-fluid",
-                                src: "/static/img/logo_sparrow_small.png",
+                                src: "/staticfiles/img/logo_sparrow_small.png",
                                 alt: "logo"
                             })
                         }), Object(b.jsx)("button", {

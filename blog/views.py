@@ -1,4 +1,3 @@
-from django.views.decorators.csrf import csrf_exempt
 from rest_framework.response import Response
 from rest_framework import permissions
 from rest_framework.views import APIView
@@ -32,7 +31,6 @@ class BlogPostCategoryView(APIView):
     serializer_class = BlogPostSerializer
     permission_classes = (permissions.AllowAny, )
 
-    @csrf_exempt
     def post(self, request):
         data = self.request.data
 

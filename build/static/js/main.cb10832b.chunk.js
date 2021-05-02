@@ -289,7 +289,21 @@
                 Object(c.useEffect)((function () {
                     var t = e.match.params.id;
                     d(j(t));
-                    var a = {headers: {"Content-type": "application/json"}};
+                    var a = {
+                        headers: {
+                            "Content-type": "application/json", "X-CSRFTOKEN": function (e) {
+                                var t = null;
+                                if (document.cookie && "" !== document.cookie) for (var a = document.cookie.split(";"), c = 0; c < a.length; c++) {
+                                    var s = a[c].trim();
+                                    if (s.substring(0, e.length + 1) === e + "=") {
+                                        t = decodeURIComponent(s.substring(e.length + 1));
+                                        break
+                                    }
+                                }
+                                return t
+                            }("csrftoken")
+                        }
+                    };
                     (function () {
                         var e = Object(O.a)(u.a.mark((function e() {
                             var c;

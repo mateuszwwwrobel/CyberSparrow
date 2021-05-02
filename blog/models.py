@@ -5,12 +5,11 @@ from django_resized import ResizedImageField
 
 
 class Categories(models.TextChoices):
-    WORLD = 'world'
+    BOARD_GAMES = 'boardgames'
     MODELLING = 'modelling'
+    WORLD = 'world'
     SCIENCE = 'science'
     TRAVEL = 'travel'
-    HISTORY = 'history'
-    TECHNOLOGY = 'technology'
     PYTHON = 'python'
 
 

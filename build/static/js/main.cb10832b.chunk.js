@@ -289,30 +289,16 @@
                 Object(c.useEffect)((function () {
                     var t = e.match.params.id;
                     d(j(t));
-                    var a = {
-                        headers: {
-                            "Content-type": "application/json", "X-CSRFToken": function (e) {
-                                var t = null;
-                                if (document.cookie && "" !== document.cookie) for (var a = document.cookie.split(";"), c = 0; c < a.length; c++) {
-                                    var n = a[c].trim();
-                                    if (n.substring(0, e.length + 1) === e + "=") {
-                                        t = decodeURIComponent(n.substring(e.length + 1));
-                                        break
-                                    }
-                                }
-                                return t
-                            }("csrftoken")
-                        }
-                    };
+                    var a = {headers: {"Content-type": "application/json"}};
                     (function () {
-                        var e = Object(v.a)(p.a.mark((function e() {
+                        var e = Object(O.a)(u.a.mark((function e() {
                             var c;
-                            return p.a.wrap((function (e) {
+                            return u.a.wrap((function (e) {
                                 for (; ;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.prev = 0, e.next = 3, f.a.post("".concat("https://mateuszwrobel.herokuapp.com", "/api/blog/category/"), {category: t}, a);
                                     case 3:
-                                        c = e.sent, s(c.data), e.next = 9;
+                                        c = e.sent, n(c.data), e.next = 9;
                                         break;
                                     case 7:
                                         e.prev = 7, e.t0 = e.catch(0);

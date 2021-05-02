@@ -29,7 +29,7 @@ class BlogPostFeaturedView(ListAPIView):
 
 class BlogPostCategoryView(APIView):
     serializer_class = BlogPostSerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = ()
 
     def post(self, request):
         data = self.request.data

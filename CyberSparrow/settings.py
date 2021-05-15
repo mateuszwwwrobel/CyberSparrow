@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com',]
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Application definition
@@ -139,6 +139,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+
 # Development
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [
@@ -149,7 +150,11 @@ USE_TZ = True
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Production
-
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'build/static')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_ACCESS_KEY')
 
@@ -158,12 +163,6 @@ AWS_S3_CUSTOM_DOMAIN = os.environ.get('CLOUDFRONT_URL')
 
 DEFAULT_FILE_STORAGE = 'CyberSparrow.storage_backends.MediaStorage'
 
-# AWS_LOCATION = 'static'
-# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'build/static'),
-# ]
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
